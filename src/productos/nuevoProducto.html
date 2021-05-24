@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos & servicios Edu</title>
+    <title>TIENDA</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../../public/css/bootstrap.min.css" rel="stylesheet">
@@ -17,7 +17,7 @@
 <body>
     
     <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">CESIT - Prod & Serv</a>
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Tienda de Accesorios</a>
         <ul class="navbar-nav px-3">
             <li class="nav-item text-nowrap">
             <a class="nav-link" href="#">Salir</a>
@@ -43,36 +43,48 @@
                         Productos
                       </a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./servicios/index.html">
-                        <span data-feather="users"></span>
-                        Servicios
-                      </a>
-                    </li>
                   </ul>
                 </div>
             </nav>
 
             <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                  <h1 class="h2">Ver Producto xxx</h1>
+                <div id="fondo" class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                  <h1 class="h2">Nuevo Producto</h1>
                   <div class="btn-toolbar mb-2 mb-md-0">
                     <div class="btn-group me-2">
                       <a href="./index.html" class="btn btn-sm btn-outline-secondary">Volver</a>
-                      <a href="./editar.html" class="btn btn-sm btn-outline-secondary">Editar</a>
                     </div>
                   </div>
                 </div>
-          
-                <div>
-
-                  descripcion del producto acá....
-                </div>
+                
+                <ul>
+                    <form class="row g-3">
+                        <div class="col-md-4">
+                            <li>
+                                <input type="text" class="form-control" id="validationDefault01" value="Nombre" required>
+                            </li>
+                            <li>
+                                <input type="text" class="form-control" id="validationDefault02" value="Precio" required>
+                            </li>
+                            <li>
+                                <input type="text" class="form-control" id="validationDefault01" value="Descripción 1" required>
+                                <input type="text" class="form-control" id="validationDefault02" value="Descripción 2" required>
+                                <input type="text" class="form-control" id="validationDefault01" value="Descripción 3" required>
+                            </li>
+                            <div class="mb-3">
+                                <label for="formFile" class="form-label">Imagen</label>
+                                <input class="form-control" type="file" id="formFile">
+                            </div>    
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-dark">Crear</button>
+                        </div>
+                    </form>
+                </ul>
                 
               </main>
 
-        </div>
-    </div>
+        
       
     <script src="../../public/js/bootstrap.bundle.min.js"></script>
 

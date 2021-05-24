@@ -53,38 +53,40 @@
                   <div class="btn-toolbar mb-2 mb-md-0">
                     <div class="btn-group me-2">
                       <a href="./index.html" class="btn btn-sm btn-outline-secondary">Volver</a>
-                      <a href="../productos/editarMochila.html" class="btn btn-sm btn-outline-secondary">Editar</a>
-                      <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Eliminar</button>
                     </div>
                   </div>
                 </div>
-
-
-                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">¿Seguro desea eliminar el producto?</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                        <button type="button" class="btn btn-dark">Eliminar</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                
-                <img src="../../image/mochila.jpg" alt="" width="350" height="350">
-                <div>
-                  <ul>
-                    <li>Dos compartimentos principales. Bolsillo al frente. </li>
-                    <li>Correas regulables</li>
-                    <li>100% poliamida con aplicacaciones de silicona / Forro: 100% poliéster</li>
-                    <li>42.00 x 29.00 x 12.00 cm</li>
-                  </ul>
-                </div>
+                                
+                <ul>
+                    <form class="row g-3">
+                        <div class="col-md-4">
+                            <li>
+                                <label for="validationDefault01" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="validationDefault01" value="Mochila Viajera" required>
+                            </li>
+                            <li>
+                                <label for="validationDefault01" class="form-label">Precio</label>
+                                <input type="text" class="form-control" id="validationDefault02" value="$3000" required>
+                            </li>
+                            <li>
+                                <label for="validationDefault01" class="form-label">Descripción</label>
+                                <input type="text" class="form-control" id="validationDefault01" value="Dos compartimentos principales. Bolsillo al frente." required>
+                                <input type="text" class="form-control" id="validationDefault02" value="Correas regulables" required>
+                                <input type="text" class="form-control" id="validationDefault01" value="100% poliamida con aplicacaciones de silicona / Forro: 100% poliéster" required>
+                                <input type="text" class="form-control" id="validationDefault02" value="42.00 x 29.00 x 12.00 cm" required>
+                            </li>
+                            <li>
+                                <label for="formFile" class="form-label">Imagen</label>
+                            </li>
+                            <div class="mb-3">
+                                <input class="form-control" type="file" id="formFile">
+                            </div>    
+                        </div>
+                        <div class="col-12">
+                          <button type="submit" class="btn btn-dark">Actualizar</button>
+                        </div>
+                    </form>
+                </ul>
                 
               </main>
 
