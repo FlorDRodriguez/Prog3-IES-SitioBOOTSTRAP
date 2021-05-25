@@ -14,10 +14,10 @@
     <!-- Custom styles for this template -->
     <link href="../../public/css/dashboard.css" rel="stylesheet">
 </head>
-<body>
+<body id="fondo">
     
-    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Tienda de Accesorios</a>
+    <header id="barra" class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">T O D O  M O D A </a>
         <ul class="navbar-nav px-3">
             <li class="nav-item text-nowrap">
             <a class="nav-link" href="#">Salir</a>
@@ -27,7 +27,6 @@
 
     <div class="container-fluid">
         <div class="row">
-
             <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
                 <div class="position-sticky pt-3">
                   <ul class="nav flex-column">
@@ -48,16 +47,13 @@
             </nav>
 
             <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                <div class="justify-content-between  align-items-center text-center mx-auto d-block">
+                  <img src="../../image/TM.png">
                   <h1 class="h2">Catálogo</h1>
-                  <div class="btn-toolbar mb-2 mb-md-0">
-                    <div class="btn-group me-2">
-                      <a class="btn btn-sm btn-outline-secondary" href="../productos/nuevoProducto.html" role="button">Nuevo Producto</a>
-                    </div>
-                  </div>
+                  
                 </div>
           
-                <div class="table-responsive">
+                <div class="display-7" class="table-responsive">
                   <table class="table">
                     <thead class="thead-dark">
                       <tr>
@@ -65,24 +61,28 @@
                         <th>Precio</th>
                       </tr>
                     </thead>
-                    <tbody>
+                    <tbody class="fw-bold">
                       <tr>
-                        <td><a href="../productos/verAros.html" class="link-info">Set aros</a></td>
+                        <td><a href="../productos/verAros.html" class="link-primary">Set aros</a></td>
                         <td>$500</td>
                       </tr>
                       <tr>
-                        <td><a href="../productos/verMochila.html" class="link-info">Mochila Viajera</a></td>
+                        <td><a href="../productos/verMochila.html" class="link-primary">Mochila Viajera</a></td>
                         <td>$3000</td>
                       </tr>
                       <tr>
-                        <td><a href="../productos/verCuaderno.html" class="link-info">Cuaderno you are doing great</a></td>
+                        <td><a href="../productos/verCuaderno.html" class="link-primary">Cuaderno you are doing great</a></td>
                         <td>$300</td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
-              </main>
-
+                <div class="btn-toolbar mb-2 mb-md-0">
+                  <div class="btn-group me-2">
+                    <a class="btn btn-sm btn-outline-secondary col-4 btn-group btn-group-justified" href="../productos/nuevoProducto.html" role="button">Nuevo Producto</a>
+                  </div>
+                </div>
+              </main>  
         </div>
     </div>
       
